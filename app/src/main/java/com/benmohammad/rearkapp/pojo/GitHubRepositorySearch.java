@@ -37,7 +37,8 @@ public class GitHubRepositorySearch {
         return search;
     }
 
-    @NonNull List<Integer> getItems() {
+    @NonNull
+    public List<Integer> getItems() {
         return Collections.unmodifiableList(items);
     }
 
