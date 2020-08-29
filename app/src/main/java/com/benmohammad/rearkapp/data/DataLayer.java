@@ -7,11 +7,10 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 
 import com.benmohammad.rearkapp.network.GitHubService;
-import com.benmohammad.rearkapp.pojo.GitHubRepository;
-import com.benmohammad.rearkapp.stores.GitHubRepositorySearchStore;
-import com.benmohammad.rearkapp.stores.GitHubRepositoryStore;
-import com.benmohammad.rearkapp.stores.NetworkRequestStatusStore;
-import com.benmohammad.rearkapp.stores.UserSettingsStore;
+import com.benmohammad.rearkapp.data.stores.GitHubRepositorySearchStore;
+import com.benmohammad.rearkapp.data.stores.GitHubRepositoryStore;
+import com.benmohammad.rearkapp.data.stores.NetworkRequestStatusStore;
+import com.benmohammad.rearkapp.data.stores.UserSettingsStore;
 
 import io.reark.reark.network.fetchers.Fetcher;
 import io.reark.reark.network.fetchers.UriFetcherManager;

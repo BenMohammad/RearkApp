@@ -75,6 +75,15 @@ public abstract class ClientDataLayerBase extends DataLayerBase {
     protected abstract int fetchGitHubRepositorySearch(@NonNull final  String searchString);
 
     @NonNull
+    public Observable<DataStreamNotification<GitHubRepository>> fetchAndGetGitHubRepository(
+            @NonNull final Integer repositoryId) {
+        checkNotNull(repositoryId);
+        Log.d(TAG, "fetchAndGetGitHubRepository(" + repositoryId + ")");
+        int listenerId = fetchGitHubRepository(repositoryId);
+        return getGitHubRepository(listenerId, repositoryId);
+    }
+
+    @NonNull
     public Observable<GitHubRepository> getGitHubRepository(@NonNull final Integer repositoryId) {
         return gitHubRepositoryStore
                 .getOnceAndStream(repositoryId)

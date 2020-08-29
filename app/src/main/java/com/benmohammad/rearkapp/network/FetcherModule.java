@@ -3,8 +3,8 @@ package com.benmohammad.rearkapp.network;
 import android.net.Uri;
 
 import com.benmohammad.rearkapp.network.fetchers.GitHubRepositoryFetcher;
-import com.benmohammad.rearkapp.stores.GitHubRepositoryStore;
-import com.benmohammad.rearkapp.stores.NetworkRequestStatusStore;
+import com.benmohammad.rearkapp.data.stores.GitHubRepositoryStore;
+import com.benmohammad.rearkapp.data.stores.NetworkRequestStatusStore;
 
 import javax.inject.Named;
 

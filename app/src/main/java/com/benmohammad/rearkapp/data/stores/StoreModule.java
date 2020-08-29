@@ -1,8 +1,6 @@
-package com.benmohammad.rearkapp.stores;
+package com.benmohammad.rearkapp.data.stores;
 
 import com.benmohammad.rearkapp.data.DataLayer;
-import com.benmohammad.rearkapp.data.DataLayerBase;
-import com.benmohammad.rearkapp.pojo.UserSettings;
 
 import javax.inject.Singleton;
 

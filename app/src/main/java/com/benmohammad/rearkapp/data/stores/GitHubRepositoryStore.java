@@ -1,4 +1,4 @@
-package com.benmohammad.rearkapp.stores;
+package com.benmohammad.rearkapp.data.stores;
 
 import com.benmohammad.rearkapp.pojo.GitHubRepository;
 

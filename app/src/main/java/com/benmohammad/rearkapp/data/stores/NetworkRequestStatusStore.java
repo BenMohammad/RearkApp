@@ -1,4 +1,4 @@
-package com.benmohammad.rearkapp.stores;
+package com.benmohammad.rearkapp.data.stores;
 
 import io.reark.reark.data.stores.MemoryStore;
 import io.reark.reark.pojo.NetworkRequestStatus;
