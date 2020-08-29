@@ -7,6 +7,7 @@ import com.benmohammad.rearkapp.pojo.GitHubRepositorySearch;
 import com.benmohammad.rearkapp.pojo.UserSettings;
 
 import io.reactivex.Observable;
+import io.reark.reark.data.DataStreamNotification;
 
 public class DataFunctions {
 

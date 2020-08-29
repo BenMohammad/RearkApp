@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
 
 import com.benmohammad.rearkapp.data.DataFunctions.GetGitHubRepository;
 import com.benmohammad.rearkapp.data.DataFunctions.GetGitHubRepositorySearch;
-import com.benmohammad.rearkapp.data.DataStreamNotification;
 import com.benmohammad.rearkapp.pojo.GitHubRepository;
 import com.benmohammad.rearkapp.pojo.GitHubRepositorySearch;
 
@@ -19,6 +18,7 @@ import io.reactivex.functions.Function;
 import io.reactivex.observables.ConnectableObservable;
 import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.PublishSubject;
+import io.reark.reark.data.DataStreamNotification;
 import io.reark.reark.utils.RxUtils;
 import io.reark.reark.viewmodels.AbstractViewModel;
 
@@ -85,7 +85,7 @@ public class RepositoriesViewModel extends AbstractViewModel {
     @NonNull
     static Function<DataStreamNotification<GitHubRepositorySearch>, ProgressStatus> toProgressStatus(){
         return notification -> {
-            if(notification.isOnGoing()) {
+            if(notification.isOngoing()) {
                 return ProgressStatus.LOADING;
             } else if(notification.isCompletedWithError()){
                 return ProgressStatus.ERROR;

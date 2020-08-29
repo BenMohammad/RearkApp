@@ -2,7 +2,6 @@ package com.benmohammad.rearkapp.pojo;
 
 import androidx.annotation.NonNull;
 
-import java.util.Objects;
 
 public class UserSettings {
 
