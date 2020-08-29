@@ -20,6 +20,7 @@ import io.reactivex.observables.ConnectableObservable;
 import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.PublishSubject;
 import io.reark.reark.utils.RxUtils;
+import io.reark.reark.viewmodels.AbstractViewModel;
 
 import static io.reark.reark.utils.Preconditions.checkNotNull;
 import static io.reark.reark.utils.Preconditions.get;

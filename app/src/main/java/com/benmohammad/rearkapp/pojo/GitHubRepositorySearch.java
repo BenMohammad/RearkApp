@@ -1,12 +1,10 @@
 package com.benmohammad.rearkapp.pojo;
 
-import androidx.annotation.IntegerRes;
 import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 import static io.reark.reark.utils.Preconditions.get;
 

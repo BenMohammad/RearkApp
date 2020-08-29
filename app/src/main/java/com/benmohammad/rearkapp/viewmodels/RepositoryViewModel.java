@@ -2,15 +2,14 @@ package com.benmohammad.rearkapp.viewmodels;
 
 import androidx.annotation.NonNull;
 
-import com.benmohammad.rearkapp.data.DataFunctions;
 import com.benmohammad.rearkapp.data.DataStreamNotification;
 import com.benmohammad.rearkapp.pojo.GitHubRepository;
 import com.benmohammad.rearkapp.pojo.UserSettings;
 
 import io.reactivex.Observable;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.processors.BehaviorProcessor;
 import io.reactivex.subjects.BehaviorSubject;
+import io.reark.reark.viewmodels.AbstractViewModel;
 
 import static com.benmohammad.rearkapp.data.DataFunctions.*;
 import static io.reark.reark.utils.Preconditions.checkNotNull;

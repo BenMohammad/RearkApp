@@ -7,7 +7,8 @@ import androidx.annotation.NonNull;
 import com.google.gson.annotations.SerializedName;
 
 import java.lang.reflect.Field;
-import java.util.Objects;
+
+import io.reark.reark.pojo.OverwritablePojo;
 
 public class GitHubRepository extends OverwritablePojo<GitHubRepository> {
 
