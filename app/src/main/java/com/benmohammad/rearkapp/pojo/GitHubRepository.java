@@ -41,6 +41,14 @@ public class GitHubRepository extends OverwritablePojo<GitHubRepository> {
         this.owner = owner;
     }
 
+    public GitHubRepository(@NonNull final GitHubRepository other) {
+        this(other.getId(),
+                other.getName(),
+                other.getStargazerCount(),
+                other.getForksCount(),
+                other.getOwner());
+    }
+
     @NonNull
     public static GitHubRepository none() {
         return new GitHubRepository(-1, "", -1, -1, GitHubOwner.empty());
