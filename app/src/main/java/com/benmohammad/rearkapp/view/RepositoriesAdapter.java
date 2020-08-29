@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
@@ -21,7 +20,7 @@ import java.util.List;
 
 public class RepositoriesAdapter extends Adapter<RepositoriesAdapter.RepositoryViewHolder> {
 
-    private final List<GitHubRepository> gitHubRepositories = new ArrayList<>(0);
+    private final List<GitHubRepository> gitHubRepositories = new ArrayList<>(10);
     private OnClickListener onClickListener;
 
     public RepositoriesAdapter(List<GitHubRepository> gitHubRepositories) {

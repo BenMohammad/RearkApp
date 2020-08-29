@@ -23,7 +23,7 @@ public final class NetworkModule {
 
     @Provides
     @Singleton
-    public OkHttpClient provideOkHttpClient(@Named("networkInterceptors")List<Interceptor> networkInterceptors) {
+    public OkHttpClient provideOkHttpClient(@Named("networkInterceptors") List<Interceptor> networkInterceptors) {
         OkHttpClient.Builder builder = new OkHttpClient().newBuilder();
         builder.networkInterceptors().addAll(networkInterceptors);
         return builder.build();

@@ -6,4 +6,6 @@ public interface ApplicationInstrumentation extends Instrumentation {
 
     @NonNull
     LeakTracing getLeakTracing();
+
+
 }

@@ -10,7 +10,6 @@ import java.util.Map;
 
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
-import okhttp3.internal.huc.OkHttpsURLConnection;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;

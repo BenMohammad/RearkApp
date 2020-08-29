@@ -40,7 +40,7 @@ public final class DataStoreModule {
 
     @Provides
     @Singleton
-    public DataLayer provideDataLayer(UriFetcherManager fetcherManager,
+    public DataLayer provideServiceDataLayer(UriFetcherManager fetcherManager,
                                       NetworkRequestStatusStore networkRequestStatusStore,
                                       GitHubRepositoryStore gitHubRepositoryStore,
                                       GitHubRepositorySearchStore gitHubRepositorySearchStore,
