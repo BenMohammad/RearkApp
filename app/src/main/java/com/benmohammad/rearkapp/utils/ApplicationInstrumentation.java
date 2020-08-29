@@ -5,5 +5,5 @@ import androidx.annotation.NonNull;
 public interface ApplicationInstrumentation extends Instrumentation {
 
     @NonNull
-    LeakTracing gteLeakTracing();
+    LeakTracing getLeakTracing();
 }
