@@ -10,7 +10,7 @@ import static io.reark.reark.utils.Preconditions.get;
 
 public class GitHubOwner {
 
-    @SerializedName("avatat_url")
+    @SerializedName("avatar_url")
     @NonNull
     private final String avatarUrl;
 
